@@ -1,0 +1,25 @@
+.links-container {
+    margin-bottom: 20px;
+    position: relative;
+    left: 10%;
+}
+
+.links-container a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-left: 20px;
+}
+
+.link {
+    height: 35px;
+    width: 150px;
+
+    cursor: pointer;
+}
+
+.link:hover {
+    background-color: rgba(61, 123, 194, 0.884);
+}

@@ -1,0 +1,34 @@
+<div class="testbox">
+    <form [formGroup]="form" (ngSubmit)="submit()">
+        <div>
+            <label for="name">Name:</label>
+            <br>
+            <input type="text" id="name" formControlName="name">
+        </div>
+        <div>
+            <label for="description">Description:</label>
+            <input type="text" id="desciption" formControlName="description">
+        </div>
+        <div>
+            <label for="image">Image:</label>
+            <br>
+            <input type="text" formControlName="image" id="image" />
+        </div>
+        <div>
+            <label for="price">Price:</label>
+            <input type="number" id="price" formControlName="price">
+        </div>
+        <div>
+            <label for="categoryId">Choose Category:</label>
+            <br>
+            <select id="categoryId" formControlName="categoryId">
+                <option *ngFor="let category of categories$ | async" [value]="category.id">
+                    {{category.name}}
+                </option>
+            </select>
+        </div>
+
+        <button type="submit" class="button-56">Save</button>
+
+    </form>
+</div>

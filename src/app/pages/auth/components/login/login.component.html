@@ -1,0 +1,16 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+    <img src="" alt="">
+    <h1>Welcome Back!<br>Sign In</h1>
+
+
+    <div class="login-inputs">
+        <div class="email">
+            <input type="email" id="login-email" placeholder="name@example.com" formControlName="email">
+        </div>
+        <div class="password">
+            <input type="password" id="login-password" placeholder="••••••••" formControlName="password">
+        </div>
+    </div>
+
+    <button class="log-in-btn button-56" type="submit">Sign In</button>
+</form>

@@ -1,0 +1,32 @@
+.log-in-btn {
+    margin-top: 20px;
+    position: relative;
+    left: 72px;
+}
+
+.login-inputs input {
+    width: 300px;
+    height: 45px;
+    border: solid 1px rgb(44, 144, 226);
+    border-radius: 5px;
+}
+
+
+.email input {
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.password input {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+h1 {
+    text-align: center;
+    line-height: 50px;
+
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(44, 144, 226);
+}

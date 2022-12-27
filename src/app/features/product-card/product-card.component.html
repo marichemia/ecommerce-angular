@@ -1,0 +1,14 @@
+<div *ngIf="product" class="card">
+    <div [ngStyle]="{
+        'background-image':'url('+ product.image +')'
+    }" class="card-image">
+
+    </div>
+
+    <div class="card-info">
+        <h2>{{product.name}}</h2>
+        <p>Description</p>
+        <p>{{product.price | currency: 'USD': true}}</p>
+        <button *appAuthAccess type="button" class="button-56" (click)="addToCart()">Add to Cart</button>
+    </div>
+</div>

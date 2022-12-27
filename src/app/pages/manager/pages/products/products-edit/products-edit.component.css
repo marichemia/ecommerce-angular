@@ -1,0 +1,5 @@
+@import url('../../categories/category-edit/category-edit.component.css');
+
+select {
+    margin-bottom: 20px;
+}

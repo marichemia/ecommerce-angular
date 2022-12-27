@@ -1,0 +1,12 @@
+@import url('../../../cart/cart.component.css');
+
+.add-btn {
+    background-color: rgb(114, 185, 114);
+    position: relative;
+    left: 9.5%;
+}
+
+.edit-btn {
+    width: 100px;
+    background-color: rgb(250, 81, 3);
+}

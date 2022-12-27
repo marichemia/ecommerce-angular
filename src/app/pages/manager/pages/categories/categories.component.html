@@ -1,0 +1,24 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID<i class="fa-solid fa-hashtag"></i></th>
+                <th>Name<i class="fa-solid fa-table-list"></i></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let category of categories">
+                <td>{{category.id}}</td>
+                <td>{{category?.name}}</td>
+                <td>
+                    <button class="button-56" id="remove-btn" (click)="deleteItem(category.id)">Remove</button>
+                    <button class="button-56 edit-btn"
+                        [routerLink]="['/manager/categories/edit', category.id]">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <button class="button-56 add-btn" [routerLink]="['/manager/categories/create']">Add</button>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <tr>
+            <th>Date<i class="fa-solid fa-calendar-days"></i></th>
+            <th>Total<i class="fa-solid fa-receipt"></i></th>
+            <th>Status<i class="fa-solid fa-spinner"></i></th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let order of orders$ | async">
+            <td>{{order.createdAt | date: 'dd.MM.yyyy HH:mm'}}</td>
+            <td>{{'$' + order.subTotal}}</td>
+            <td>{{order.pending ? 'Received' : 'Canceled'}}</td>
+
+        </tr>
+    </tbody>
+</table>

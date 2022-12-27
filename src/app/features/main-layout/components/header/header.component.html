@@ -1,0 +1,42 @@
+<header>
+    <a routerLink="/">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="logo" width="90" height="80">
+            <p>eCommerce</p>
+        </div>
+    </a>
+    <!--<div class="search-container">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button type="submit">
+            <img src="assets/images/search-icon.png" alt="search" width="30" height="30">
+        </button>
+    </div>-->
+    <a routerLink="/products">Products</a>
+    <ng-container *ngIf="userIsAuthenticated; else notAuthenticated">
+        <a class="cart" routerLink="/cart">
+            <i class="fa-solid fa-bag-shopping">
+                <span> {{cartCount$ | async}} </span>
+            </i>
+
+        </a>
+
+        <ul>
+            <li><a href="#" routerLink="/manager">Content Manager</a></li>
+            <li><a href="#" routerLink="/orders">Orders</a></li>
+        </ul>
+        <button class="button-56" (click)="signOut()">
+            Sign Out
+        </button>
+    </ng-container>
+    <ng-template #notAuthenticated>
+        <div class="auth-btns">
+            <button routerLink="/auth/login" class="button-56">
+                Sign In
+            </button>
+            <button routerLink="/auth/register" class="button-56">
+                Sign Up
+            </button>
+        </div>
+    </ng-template>
+
+</header>

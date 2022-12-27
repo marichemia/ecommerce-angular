@@ -1,0 +1,30 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Product<i class="fa-solid fa-camera"></i></th>
+                <th>Name<i class="fa-solid fa-table-list"></i></th>
+                <th>Price<i class="fa-solid fa-tag"></i></th>
+                <th>Category<i class="fa-solid fa-shirt"></i></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>
+                    <img [src]="product.image" width="100">
+                </td>
+                <td>{{product.name}}</td>
+                <td>{{'$' + product.price}}</td>
+                <td>{{product.category.name}}</td>
+                <td>
+                    <button class="button-56" id="remove-btn" (click)="deleteItem(product.id)">Remove</button>
+                    <button class="button-56 edit-btn"
+                        [routerLink]="['/manager/products/edit', product.id]">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <button class="button-56 add-btn" [routerLink]="['/manager/products/create']">Add</button>
+    </div>
+</div>

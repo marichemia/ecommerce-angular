@@ -1,0 +1,38 @@
+td {
+    border: 1px solid rgb(177, 168, 168);
+
+    height: 70px;
+    color: rgb(78, 76, 76);
+
+}
+
+table {
+    width: 80%;
+    position: relative;
+    left: 10%;
+
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(44, 144, 226);
+    text-align: center;
+}
+
+#remove-btn {
+    width: 100px;
+}
+
+i {
+    margin-left: 5px;
+    color: darkorange;
+}
+
+.checkout {
+    position: absolute;
+    left: 10%;
+}
+
+.checkout h4 {
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(78, 76, 76);
+    position: relative;
+    left: 10px;
+}

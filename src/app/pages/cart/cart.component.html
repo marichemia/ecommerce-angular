@@ -1,0 +1,29 @@
+<div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product<i class="fa-solid fa-bag-shopping"></i></th>
+                    <th>Price<i class="fa-solid fa-tag"></i></th>
+                    <th>Quantity<i class="fa-solid fa-lines-leaning"></i></th>
+                    <th>Total<i class="fa-solid fa-calculator"></i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of cartItems">
+                    <td>{{item.item?.name}}</td>
+                    <td>{{item.item?.price}}</td>
+                    <td>{{item.quantity}}</td>
+                    <td>{{item.total}}</td>
+                    <td>
+                        <button (click)="removeItem(item)" class="button-56" id="remove-btn">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="checkout">
+            <h4>Total Price: {{cartSum}}</h4>
+            <button class="button-56" (click)="checkout()">Proceed To Checkout</button>
+        </div>
+    </div>
+</div>

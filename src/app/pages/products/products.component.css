@@ -1,0 +1,52 @@
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.container {
+    width: 80%;
+    height: auto;
+
+    position: relative;
+    left: 10%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+}
+
+.categories {
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.category-link {
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.category-link:hover {
+    background-color: rgba(61, 123, 194, 0.884);
+}
+
+
+.products {
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
