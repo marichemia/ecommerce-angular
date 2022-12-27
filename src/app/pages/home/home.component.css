@@ -1,6 +1,6 @@
 .banner {
-    background-image: url(/assets/images/banner.jpg);
-    width: 70%;
+    background-image: url(assets/images/banner.jpg);
+    width: 60%;
     height: 700px;
     background-size: cover;
     position: absolute;
@@ -11,7 +11,7 @@
     width: 100%;
     height: 700px;
     padding: 20px 50px;
-    background-image: url(/assets/images/banner-bg.webp);
+    background-image: url(assets/images/banner-bg.webp);
     background-size: cover;
 
     display: flex;
